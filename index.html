@@ -5,8 +5,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rock Paper Scissors</title>
+        <link rel="icon" type="image/x-icon" href="/favicon_io/favicon.ico" />
         <link rel="stylesheet" href="style.css" />
-        <script src="main.js"></script>
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <h1>Rock Paper Scissors</h1>
+        </header>
+
+        <div class="main-container">
+            <h2 id="round-result">Make Your Choice</h2>
+            <h3 id="score-message">First to score 5 points wins the game</h3>
+
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="sign" id="player-sign">❔</div>
+                    <p class="score" id="player-score">Player: 0</p>
+                </div>
+                <div class="score-box">
+                    <div class="sign" id="computer-sign">❔</div>
+                    <p class="score" id="computer-score">Computer: 0</p>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <button id="rock" type="text" class="button" value="rock">✊</button>
+                <button id="paper" type="text" class="button" value="paper">✋</button>
+                <button id="scissors" type="text" class="button" value="scissors">✌️</button>
+            </div>
+
+            <div class="modal-container" id="modal-container">
+                <div class="modal" id="end-game-modal">
+                    <p class="modal-title" id="end-game-message">End Result</p>
+                    <button class="restart-button" id="restart-button">Play Again?</button>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
 </html>
